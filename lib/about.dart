@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
-
+import 'itemgroup.dart';
 class MyAboutPage extends StatefulWidget {
   const MyAboutPage({super.key});
 
@@ -9,8 +8,11 @@ class MyAboutPage extends StatefulWidget {
 }
 
 class _MyAboutPageState extends State<MyAboutPage> {
+  MyFruits myFruits = MyFruits();
   @override
   Widget build(BuildContext context) {
+    final giveNo = ModalRoute.of(context)!.settings.arguments as Map;
+    int indexNo = giveNo['id'];
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(

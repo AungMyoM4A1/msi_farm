@@ -9,7 +9,6 @@ void main() {
 
 //MyFruites Class
 MyFruits myFruits = MyFruits();
-int indexNo = 0;
 
 //___________________________
 
@@ -51,10 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Card(
               child: InkWell(
                 onTap: () {
-                  setState(() {
-                    indexNo = 0;
-                  });
-                  Navigator.pushNamed(context, '/about');
+                  Navigator.pushNamed(context, '/about', arguments: {'id': 0});
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -75,10 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Card(
               child: InkWell(
                 onTap: () {
-                  setState(() {
-                    indexNo = 1;
-                  });
-                  Navigator.pushNamed(context, '/about');
+                  Navigator.pushNamed(context, '/about', arguments: {'id': 1});
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -100,10 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Card(
               child: InkWell(
                 onTap: () {
-                  setState(() {
-                    indexNo = 2;
-                  });
-                  Navigator.pushNamed(context, '/about');
+                  Navigator.pushNamed(context, '/about', arguments: {'id': 2});
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -125,10 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Card(
               child: InkWell(
                 onTap: () {
-                  setState(() {
-                    indexNo = 3;
-                  });
-                  Navigator.pushNamed(context, '/about');
+                  Navigator.pushNamed(context, '/about', arguments: {'id': 3});
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -150,10 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Card(
               child: InkWell(
                 onTap: () {
-                  setState(() {
-                    indexNo = 4;
-                  });
-                  Navigator.pushNamed(context, '/about');
+                  Navigator.pushNamed(context, '/about', arguments: {'id': 4});
                 },
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
